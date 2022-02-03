@@ -7,18 +7,16 @@
 
 body {
     font-family: "Helvetica Neue", Helvetica;
-    background-image: url(imagens/cenario.gif);
+    background-image: url(imagens/cenario.gif); 
+
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    color: rgb(255, 5, 5);
 }
 
 header {
     height: 150px;
-    border: 1px solid red;
-
-    background-color: rgb(123, 131, 131);
-
-  
+    background-color: rgba(79, 138, 138, 0.5);
     color: azure;
 
     display: flex;
@@ -27,12 +25,14 @@ header {
 }
 
 main {
-    height: 100vh;
-    /* background: #ccc; */
+   height: 100%;
+   width: 100%;
 }
+
 main .cidade {
     display: flex;
     justify-content: center;
+
     align-items: center; 
     padding-top: 50px;
 }
@@ -43,9 +43,11 @@ main .formulario {
     justify-content: center;
     margin-top: 20px;
 }
+
 main .form-cidade {
     height: 40px;
     width: 400px;
+
     font-size: 2rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
@@ -53,36 +55,44 @@ main .form-cidade {
 main .resultado {
     display: flex;
     justify-content:center;
-     flex-direction: column; 
+    flex-direction: column; 
 
     margin-top: 20px;
     font-size: 3rem;
 }
+
+main .resultado .cidadeAtual{
+    display: flex;
+    justify-content:center;
+}
+
 main .resultado .tempAtual {
     display: flex;
     justify-content: center;
+
+    background-image: url(imagens/maxima.jpg);
+    height:100%;    
 }
 
 main .resultado .maxMin {
     display: flex;
     justify-content:space-around;
-    
 }
 
 
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
      height: 150px;
      width: 100%;
-     border: 1px solid red;
 
      position:fixed;
      bottom: 0;
-     background-color: rgb(123, 131, 131);
-
-     display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+     background-color: rgba(79, 138, 138, 0.5);
+     color: black;
 }
+
