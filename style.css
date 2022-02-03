@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica;
+    background-image: url(imagens/cenario.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header {
+    height: 150px;
+    border: 1px solid red;
+
+    background-color: rgb(123, 131, 131);
+
+  
+    color: azure;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 100vh;
+    /* background: #ccc; */
+}
+main .cidade {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 50px;
+}
+
+
+main .formulario {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+main .form-cidade {
+    height: 40px;
+    width: 400px;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+main .resultado {
+    display: flex;
+    justify-content:center;
+     flex-direction: column; 
+
+    margin-top: 20px;
+    font-size: 3rem;
+}
+main .resultado .tempAtual {
+    display: flex;
+    justify-content: center;
+}
+
+main .resultado .maxMin {
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+
+
+footer {
+     height: 150px;
+     width: 100%;
+     border: 1px solid red;
+
+     position:fixed;
+     bottom: 0;
+     background-color: rgb(123, 131, 131);
+
+     display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
