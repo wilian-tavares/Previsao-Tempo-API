@@ -7,9 +7,9 @@ const maxima = document.getElementById('maxima');
 const minima = document.getElementById('minima');
 const cidadeAtual = document.getElementById('cidadeAtual');
 
-async function tempo(city) {
+async function tempo(cidades) {
     try {
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=3d6a3d1fc18e2c50061da8437fb6b0b9`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidades}&units=metric&appid=3d6a3d1fc18e2c50061da8437fb6b0b9`;
 
         const data = await fetch(url)
         const json = await data.json();
