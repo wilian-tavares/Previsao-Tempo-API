@@ -22,12 +22,12 @@ async function tempo(cidades) {
         const temperaturaMinima = json.main.temp_min;
 
         atual.textContent = `Atual: ${temperaturaAtual.toFixed(1)}°`;
-        minima.textContent = `Mínima: ${temperaturaMinima.toFixed(1)}°`;
-        maxima.textContent = `Máxima: ${temperaturaMaxima.toFixed(1)}°`;
+        minima.textContent = `Mín: ${temperaturaMinima.toFixed(1)}°`;
+        maxima.textContent = `Máx: ${temperaturaMaxima.toFixed(1)}°`;
         cidadeAtual.textContent = `${cidades} - ${pais}`
 
         console.log(`${cidades} - ${pais} 
-                        \nAtual: ${temperaturaAtual.toFixed(1)}° 
+                        \n ${temperaturaAtual.toFixed(1)}° 
                         \nMinima: ${minima.toFixed(1)}° 
                         \nMáxima: ${maxima.toFixed(1)}°`)
 

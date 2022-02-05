@@ -74,6 +74,24 @@ main .resultado .tempAtual {
     height:100%;    
 }
 
+main .resultado .minima { 
+    background-image: url(imagens/minima.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-position: right;
+    padding-right: 60px;
+}
+
+main .resultado .maxima { 
+    background-image: url(imagens/maxima.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-position: right;
+    padding-right: 60px;
+}
+
 main .resultado .maxMin {
     display: flex;
     justify-content:space-around;
@@ -95,4 +113,6 @@ footer {
      background-color: rgba(79, 138, 138, 0.5);
      color: black;
 }
+
+
 
