@@ -115,4 +115,31 @@ footer {
 }
 
 
+/*  RESPONSIVIDADE  */
 
+
+@media(max-width:1200px) {
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+    } 
+}
+
+@media(max-width:700px) {
+    main .resultado,
+    main .tempAtual {
+        font-size: 2rem;    
+    }
+}
+
+@media(max-width:500px) {
+        main .form-cidade{
+            width: 250px;
+        }
+        main .maxMin{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }  
+}
